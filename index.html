@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Burger Jairo - Hamburguesas artesanales, ingredientes de calidad y mucho sabor.">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Burger Jairo | Hamburguesas Artesanales</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#inicio" class="logo">
+                🍔 Burger Jairo
+            </a>
+
+            <nav class="menu-nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#opiniones">Opiniones</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <button class="cart-button" id="abrirCarrito">
+                🛒 Carrito
+                <span id="contadorCarrito">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="etiqueta">
+                        🍔 Hamburguesas artesanales
+                    </span>
+
+                    <h1>
+                        El sabor que
+                        <span>mereces.</span>
+                    </h1>
+
+                    <p>
+                        Hamburguesas hechas al momento con carne de calidad,
+                        ingredientes frescos y mucho sabor.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#menu" class="button button-primary">
+                            Ver menú
+                        </a>
+
+                        <a href="#contacto" class="button button-secondary">
+                            Contactar
+                        </a>
+
+                    </div>
+
+                    <div class="hero-info">
+
+                        <div>
+                            <strong>4.9/5</strong>
+                            <span>⭐ Opiniones</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>🥩 Calidad</span>
+                        </div>
+
+                        <div>
+                            <strong>20 min</strong>
+                            <span>⚡ Preparación</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+                        alt="Hamburguesa Burger Jairo"
+                    >
+
+                    <div class="floating-card">
+
+                        <span>🔥 Más vendida</span>
+
+                        <strong>Burger Jairo</strong>
+
+                        <small>8,00 €</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORÍAS ================= -->
+
+        <section class="categories">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>DESCUBRE</span>
+
+                    <h2>¿Qué te apetece hoy?</h2>
+
+                </div>
+
+                <div class="category-grid">
+
+                    <button class="category-card" data-category="hamburguesas">
+                        🍔
+                        <strong>Hamburguesas</strong>
+                        <span>6 opciones</span>
+                    </button>
+
+                    <button class="category-card" data-category="acompanamientos">
+                        🍟
+                        <strong>Acompañamientos</strong>
+                        <span>4 opciones</span>
+                    </button>
+
+                    <button class="category-card" data-category="bebidas">
+                        🥤
+                        <strong>Bebidas</strong>
+                        <span>5 opciones</span>
+                    </button>
+
+                    <button class="category-card" data-category="postres">
+                        🍰
+                        <strong>Postres</strong>
+                        <span>3 opciones</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENÚ ================= -->
+
+        <section class="menu-section" id="menu">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>NUESTRO MENÚ</span>
+
+                    <h2>Elige tu favorita</h2>
+
+                    <p>
+                        Productos preparados al momento con ingredientes seleccionados.
+                    </p>
+
+                </div>
+
+
+                <div class="filters">
+
+                    <button class="filter active" data-filter="todos">
+                        Todo
+                    </button>
+
+                    <button class="filter" data-filter="hamburguesas">
+                        Hamburguesas
+                    </button>
+
+                    <button class="filter" data-filter="acompanamientos">
+                        Acompañamientos
+                    </button>
+
+                    <button class="filter" data-filter="bebidas">
+                        Bebidas
+                    </button>
+
+                    <button class="filter" data-filter="postres">
+                        Postres
+                    </button>
+
+                </div>
+
+
+                <div class="products-grid">
+
+
+                    <!-- PRODUCTO 1 -->
+
+                    <article class="product-card" data-category="hamburguesas">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                                alt="Burger Jairo"
+                            >
+
+                            <span class="product-tag">
+                                ⭐ Más vendida
+                            </span>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="product-header">
+
+                                <h3>Burger Jairo</h3>
+
+                                <strong>8,00 €</strong>
+
+                            </div>
+
+                            <p>
+                                Carne de ternera, queso cheddar, bacon,
+                                lechuga, tomate y salsa especial.
+                            </p>
+
+                            <button
+                                class="add-button"
+                                data-name="Burger Jairo"
+                                data-price="8"
+                            >
+                                Añadir al carrito
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 2 -->
+
+                    <article class="product-card" data-category="hamburguesas">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"
+                                alt="Cheeseburger"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="product-header">
+
+                                <h3>Cheeseburger</h3>
+
+                                <strong>8,50 €</strong>
+
+                            </div>
+
+                            <p>
+                                Carne de ternera, doble queso cheddar
+                                y nuestra salsa de la casa.
+                            </p>
+
+                            <button
+                                class="add-button"
+                                data-name="Cheeseburger"
+                                data-price="8.5"
+                            >
+                                Añadir al carrito
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 3 -->
+
+                    <article class="product-card" data-category="hamburguesas">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=700&q=80"
+                                alt="Bacon Burger"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="product-header">
+
+                                <h3>Bacon Burger</h3>
+
+                                <strong>9,00 €</strong>
+
+                            </div>
+
+                            <p>
+                                Carne de ternera, bacon crujiente,
+                                cheddar y cebolla caramelizada.
+                            </p>
+
+                            <button
+                                class="add-button"
+                                data-name="Bacon Burger"
+                                data-price="9"
+                            >
+                                Añadir al carrito
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 4 -->
+
+                    <article class="product-card" data-category="hamburguesas">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=700&q=80"
+                                alt="Double Burger"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="product-header">
+
+                                <h3>Double Burger</h3>
+
+                                <strong>10,50 €</strong>
+
+                            </div>
+
+                            <p>
+                                Doble carne, doble queso, pepinillos
+                                y salsa especial.
+                            </p>
+
+                            <button
+                                class="add-button"
+                                data-name="Double Burger"
+                                data-price="10.5"
+                            >
+                                Añadir al carrito
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 5 -->
+
+                    <article class="product-card" data-category="acompanamientos">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80"
+                                alt="Patatas fritas"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="product-header">
+
+                                <h3>Patatas Jairo</h3>
+
+                                <strong>3,50 €</strong>
+
+                            </div>
+
+                            <p>
+                                Patatas crujientes con nuestra
+                                salsa especial.
+                            </p>
+
+                            <button
+                                class="add-button"
+                                data-name="Patatas Jairo"
+                                data-price="3.5"
+                            >
+                                Añadir al carrito
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 6 -->
+
+                    <article class="product-card" data-category="acompanamientos">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=700&q=80"
+                                alt="Aros de cebolla"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="product-header">
+
+                                <h3>Aros de cebolla</h3>
+
+                                <strong>4,00 €</strong>
+
+                            </div>
+
+                            <p>
+                                Aros de cebolla crujientes
+                                recién preparados.
+                            </p>
+
+                            <button
+                                class="add-button"
+                                data-name="Aros de cebolla"
+                                data-price="4"
+                            >
+                                Añadir al carrito
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 7 -->
+
+                    <article class="product-card" data-category="bebidas">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?auto=format&fit=crop&w=700&q=80"
+                                alt="Refresco"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="product-header">
+
+                                <h3>Refresco</h3>
+
+                                <strong>2,00 €</strong>
+
+                            </div>
+
+                            <p>
+                                Coca-Cola, Fanta, Sprite
+                                y otras opciones.
+                            </p>
+
+                            <button
+                                class="add-button"
+                                data-name="Refresco"
+                                data-price="2"
+                            >
+                                Añadir al carrito
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 8 -->
+
+                    <article class="product-card" data-category="postres">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+                                alt="Tarta"
+                            >
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="product-header">
+
+                                <h3>Tarta de chocolate</h3>
+
+                                <strong>4,50 €</strong>
+
+                            </div>
+
+                            <p>
+                                Tarta de chocolate cremosa
+                                con una base crujiente.
+                            </p>
+
+                            <button
+                                class="add-button"
+                                data-name="Tarta de chocolate"
+                                data-price="4.5"
+                            >
+                                Añadir al carrito
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OFERTA ================= -->
+
+        <section class="offer">
+
+            <div class="container offer-content">
+
+                <div>
+
+                    <span>🔥 OFERTA ESPECIAL</span>
+
+                    <h2>
+                        Combo Burger Jairo
+                    </h2>
+
+                    <p>
+                        Burger Jairo + patatas + bebida
+                    </p>
+
+                </div>
+
+                <div class="offer-price">
+
+                    <span class="old-price">13,50 €</span>
+
+                    <strong>11,50 €</strong>
+
+                    <button
+                        class="add-button"
+                        data-name="Combo Burger Jairo"
+                        data-price="11.5"
+                    >
+                        Aprovechar oferta
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NOSOTROS ================= -->
+
+        <section class="about" id="nosotros">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80"
+                        alt="Interior del restaurante"
+                    >
+
+                </div>
+
+                <div class="about-text">
+
+                    <span>CONÓCENOS</span>
+
+                    <h2>
+                        Más que una hamburguesería.
+                    </h2>
+
+                    <p>
+                        En Burger Jairo creemos que una buena hamburguesa
+                        empieza con buenos ingredientes.
+                    </p>
+
+                    <p>
+                        Preparamos cada pedido al momento para que puedas
+                        disfrutar de una comida recién hecha y llena de sabor.
+                    </p>
+
+                    <div class="features">
+
+                        <div>
+                            <strong>🥩</strong>
+                            <span>Ingredientes de calidad</span>
+                        </div>
+
+                        <div>
+                            <strong>🔥</strong>
+                            <span>Preparado al momento</span>
+                        </div>
+
+                        <div>
+                            <strong>❤️</strong>
+                            <span>Hecho con cariño</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OPINIONES ================= -->
+
+        <section class="reviews" id="opiniones">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>OPINIONES</span>
+
+                    <h2>Lo que dicen nuestros clientes</h2>
+
+                </div>
+
+                <div class="reviews-grid">
+
+                    <article class="review">
+
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                        <p>
+                            "La Burger Jairo está brutal. La carne
+                            y el bacon están increíbles."
+                        </p>
+
+                        <strong>Alex M.</strong>
+
+                    </article>
+
+
+                    <article class="review">
+
+                        <div class="stars">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                        <p>
+                            "Muy buena calidad y el pedido llegó
+                            perfecto. Repetiré."
+                        </p
